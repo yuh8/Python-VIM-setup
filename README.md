@@ -5,3 +5,16 @@
 brew update . 
 #### 2. Install pyenv
 pyenv is used for an organized and clean installation of multiple python versions
+```
+brew install pyenv
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+```
+#### 3. Install python versions
+To check available python versions
+```
+pyenv install --list
+```
+To install a specific version
+```
+pyenv install <python-version>
+```
