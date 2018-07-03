@@ -44,7 +44,7 @@ mkvirtualenv -p <pyenv version path> <name of virtual env>
 ```
 For example
 ```
-mkvirtualenv -p <~/.pyenv/versions/3.6.5/bin/python3> python36
+mkvirtualenv -p ~/.pyenv/versions/3.6.5/bin/python3 python36
 ```
 Work on a virtualenv
 ```
