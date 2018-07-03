@@ -49,6 +49,7 @@ mkvirtualenv -p <~/.pyenv/versions/3.6.5/bin/python3> python36
 Work on a virtualenv
 ```
 workon python3
+Deactivate
 ```
 Then you can install packages using pip
 ```
@@ -62,4 +63,11 @@ After creating another environment, you can do the following
 ```
 pip install -r requirements.txt
 ```
+#### 6. VIM setup
+Make sure to install Cmake first for youcompleteme plugin
+```
+brew install Cmake
+```
+Downloade the .vimrc file from this repository and put in the home folder then you are all set
+
 
