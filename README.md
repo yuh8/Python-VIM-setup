@@ -18,3 +18,48 @@ To install a specific version
 ```
 pyenv install <python-version>
 ```
+Then we can set a global python version (for example to version 3.6.5)
+```
+pyenv global 3.6.5
+```
+#### 4. Install virtual environment
+Install low level virtualenv package
+```
+pip install virtualenv
+```
+Install and setup userfriendly virtualenvwrapper
+```
+pip install virtualenvwrapper
+```
+Put the following commands in the ~/.bash_profile
+```
+export WORKON_HOME=~/Dev_Envs
+export VIRTUALENVWRAPPER_PYTHON='which python'
+source /usr/local/bin/virtualenvwrapper.sh
+```
+#### 5. Virtual env basic usage
+Create a virtualenv
+```
+mkvirtualenv -p <pyenv version path> <name of virtual env>
+```
+For example
+```
+mkvirtualenv -p <~/.pyenv/versions/3.6.5/bin/python3> python36
+```
+Work on a virtualenv
+```
+workon python3
+```
+Then you can install packages using pip
+```
+pip install numpy
+```
+And then freeze local packages for fast installations in other environment
+```
+pip freeze -l > requirements.txt
+```
+After creating another environment, you can do the following
+```
+pip install -r requirements.txt
+```
+
