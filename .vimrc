@@ -1,5 +1,6 @@
 " required for vim setup
 set nocompatible 
+set noswapfile
 " show line number
 set nu
 " allow copy and paster
@@ -11,18 +12,17 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " add plugins here
 Plugin 'gmarik/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'maralla/validator.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tell-k/vim-autopep8'
+Plugin 'vim-airline/vim-airline'
+Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'dracula/vim'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 filetype plugin indent on
-" Powerline setup
-set t_Co=256
-let g:Powerline_symbols = "fancy"
 " validator setup
 let g:validator_permament_sign = 1
 " autoformat with pep8 on save
